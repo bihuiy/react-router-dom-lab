@@ -15,11 +15,12 @@ const MailboxForm = ({ addBox }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Box Owner:
+        Enter a Boxholder:
         <input
           type="text"
           value={boxOwner}
           onChange={(e) => setBoxOwner(e.target.value)}
+          placeholder="Boxholder name"
           required
         />
       </label>
@@ -31,7 +32,7 @@ const MailboxForm = ({ addBox }) => {
           <option>Large</option>
         </select>
       </label>
-      <button type="submit">Create Mailbox</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };

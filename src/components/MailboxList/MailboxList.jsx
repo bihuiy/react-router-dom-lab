@@ -4,11 +4,11 @@ import "./MailboxList.css";
 const MailboxList = ({ mailboxes }) => {
   return (
     <div>
-      <h2>All Mailboxes</h2>
+      <h2>Mailbox List</h2>
       <ul>
         {mailboxes.map((mb) => (
           <li key={mb._id} className="mail-box">
-            <Link to={`/mailboxes/${mb._id}`}>Box #{mb._id}</Link>
+            <Link to={`/mailboxes/${mb._id}`}>Box {mb._id}</Link>
           </li>
         ))}
       </ul>
